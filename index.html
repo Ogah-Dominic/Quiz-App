@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .question {
+            font-size: 1.2em;
+        }
+        .options {
+            margin: 10px 0;
+        }
+        .options button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+        .score {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz">
+            <div class="question" id="question">Question text</div>
+            <div class="options" id="options"></div>
+            <button id="next-btn" style="display: none;">Next</button>
+        </div>
+        <div id="score-container" style="display: none;">
+            <div class="score" id="score">Your score: </div>
+            <button onclick="startQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
+
